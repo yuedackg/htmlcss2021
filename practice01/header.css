@@ -1,0 +1,41 @@
+.nav-button {
+    box-sizing: content-box;
+    padding: 0;
+    outline: none;
+    border: none;
+    background: none;
+    width: 20px;
+    height: 14px;
+    cursor: pointer;
+    color: var(--darkgray);
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+    width: 1px;
+}
+
+.nav-button::before,
+.nav-button::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: currentColor;
+    transform: translateY(5px);
+}
+
+.nav-button::before {
+    transform: translateY(-5px);
+    box-shadow: 0 6px currentColor;
+}
+
+.spacing {
+    justify-content: space-around;
+    align-items: center;
+}
